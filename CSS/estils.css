@@ -1,0 +1,465 @@
+/*estils generals*/
+html{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
+main p{
+  line-height: 1.5;
+}
+
+.container-content{
+  margin: 0 16px;
+}
+
+.blocintro{
+  max-width: 768px;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+li>a{
+  color:unset;
+}
+
+main a{
+  color: rgb(222,35,51);
+}
+
+main a:hover{
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.estil-link-dos{
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.estil-link-dos:hover{
+  text-decoration: none;
+  color: black;
+}
+
+abbr{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+figure{
+  margin: 32px 0;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h1 a:hover{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+h1 span{
+  font-weight: 400;
+  letter-spacing: -8px;
+}
+
+h1>a{
+  color: black;
+}
+
+h2{
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.6rem;
+}
+
+h4{
+  font-size: 1.2rem;
+}
+
+.titol-article{
+  text-align: left;
+  font-size: 2rem;
+}
+
+/*estils capses headers i footer*/
+header,footer{
+  text-align: center;
+}
+
+header{
+  position:fixed;
+  top:0;
+  width: 100%;
+  box-shadow: 1px 5px 15px -2px rgba(151, 151, 151, 0.20);
+  background-color:white;
+  padding-bottom: 10px;
+}
+
+footer{
+  background-color: black;
+  margin:0;
+  color: white;
+  padding-top: 48px;
+  padding-bottom: 24px;
+  margin-top: 64px;
+}
+
+/*estils del contingut del header i footer*/
+nav ul{
+  padding: 0;
+}
+
+header li{
+  list-style-type:none;
+  padding: 4px;
+  font-weight: 700;
+}
+
+footer li{
+  list-style-type:none;
+  padding: 4px 0;
+}
+
+header li>a:hover{
+  color:rgba(0,0,0,0.5);
+}
+
+footer li>a:hover{
+  color:rgb(222,35,51);
+}
+
+.pagina-actual{
+  color: rgb(222,35,51);
+}
+
+footer img:hover{
+  opacity: 0.7;
+}
+
+/* llista enllaços episodis */
+h3+ul{
+  list-style-type:none;
+  padding: 0px;
+}
+
+/* afegir ">" als enllaços */
+.links-episodi li::before, 
+.estil-link-dos::before{
+  content: ">";
+  margin-right: 5px;
+  color: inherit;
+} 
+
+
+/* estils articles del home */
+.article-card{
+  flex:1;
+  padding: 16px;
+}
+
+.article-card h3{
+  color:rgb(222,35,51);
+}
+
+.article-card a:hover{
+  text-decoration: none;
+}
+
+.container-imatge{
+    background-image: url("../img/bg-hero-home-m.jpg");
+    margin-top: 275px;
+    height: 300px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: cover;
+  }
+
+.container-imatge p{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+/* estils breadcrump menu */
+.breadcrumb {
+    padding: 0 .5rem;
+    margin-top: 334px;
+    margin-left: 16px;
+  }
+
+.breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 8px;
+  content: ">";
+}
+
+/* estils del peu d'imatge */
+figcaption ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 16px 0;
+  padding: 0;
+}
+
+figcaption li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 16px;
+  content: "|";
+}
+
+/* estils card despacho42 */
+.despacho42-image-container{
+  background-color: rgb(244, 246, 247);
+  margin-top: 32px;
+  padding: 16px;
+}
+
+img[alt*="isologo"]{
+  border-radius: 16px;
+}
+
+/* estils del aside */
+aside{
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.recents-card{
+  display: flex;
+  padding:24px 0;
+  border-bottom: 1px solid rgb(143, 143, 143);
+}
+
+aside img{
+  border-radius: 75px;
+  width: 150px;
+}
+
+.recents-card div{
+  padding: 0 16px 16px 16px;
+}
+
+aside p{
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.time-aside{
+  font-weight: 400;
+}
+
+/* estils del formulari */
+form {
+  margin: 0 auto;
+  /* max-width: 800px; */
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+  width: 100%;
+  height: 64px;
+  padding: 12px 20px;
+  margin: 4px 0;
+  display: inline-block;
+  background-color: rgb(244, 246, 247);
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1.2rem;
+  border: none;
+}
+
+textarea{
+  height: 128px;
+}
+
+label{
+  font-size: 1.2rem;
+}
+
+.checkbox{
+  margin: 32px 0;
+}
+
+button{
+  background-color: rgb(222,35,51);
+  color: white;
+  padding: 10px;
+  border: none;
+}
+
+button:hover{
+  background-color: rgb(222,35,51,0.8);
+}
+
+/* estils de les caixes aplicacions */
+.contenidor-aplicacions{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 24px;
+  gap: 24px;
+}
+
+.contenidor-aplicacions article {
+background-color: rgb(244, 246, 247);
+padding: 8px 24px;
+}
+
+.marge-superior{
+  margin-top: 315px;
+}
+
+/* estils de al cinema */
+iframe{
+  margin-bottom: 0;
+  border: none;
+  max-width: 100%;
+}
+
+iframe+p{
+  margin: 0;
+  padding: 16px;
+}
+
+.video-card{
+  background-color:rgb(244, 246, 247);
+}
+
+.video-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 24px;
+  max-width: 615px;
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width: 768px) {
+  .article-cards-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .despacho42-image-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+
+  .despacho42-image-container h2{
+    margin-top: 0;
+  }
+
+  .despacho42-image-container div{
+    margin-left: 24px;
+  }
+}
+
+@media screen and (min-width: 992px){
+  .marge-superior{
+    margin-top: 175px;
+  }
+  
+  nav li{
+    display:inline;
+  }
+  
+  header,footer{
+    text-align: initial;
+    padding-left: 16px;
+  }
+
+  footer li:not(:first-child)::before{
+    display: inline-block;
+    margin: 0 8px;
+    content: "·";
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  h1 span{
+    font-weight: 400;
+    letter-spacing: -2px;
+  }
+
+  .container-imatge{
+    background-image: url("../img/bg-hero-home.jpg");
+    margin-top: 129px;
+    background-size: cover;
+  }
+
+  .container-content,.footer-content,h1,header nav{
+    max-width: 1140px;
+    margin-right:auto;
+    margin-left:auto;
+  }
+
+  .breadcrumb{
+    margin-top: 196px;
+  }
+
+  .article-aside-container{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 64px;
+    margin:16px;
+  }
+
+  aside p{
+    font-size: 1rem;
+  }
+
+  aside img{
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .contenidor-aplicacions{
+    margin: 0 16px;
+  }
+
+  .video-container{
+    grid-template-columns: 1fr 1fr;
+    margin: 16px;
+    max-width: initial;
+  }
+}
